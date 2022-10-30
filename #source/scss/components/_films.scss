@@ -1,0 +1,39 @@
+// .films {
+//   margin: 550px 0 0 0;
+//   &__container {
+//   }
+//   &__title {
+//     text-align: center;
+//     margin: 0 0 60px 0;
+//   }
+//   &__movies {
+//     display: flex;
+//     justify-content: center;
+//     margin: 0 -30px 0 0;
+//   }
+//   &__movie {
+//     padding: 0 30px 0 0;
+//   }
+// }
+.films {
+  margin: 550px auto 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+
+  .films__slider {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 40px;
+  }
+  .slick-arrow {
+    &.slick-prev {
+    }
+
+    &.slick-next {
+    }
+  }
+}

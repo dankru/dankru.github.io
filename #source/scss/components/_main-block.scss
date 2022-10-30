@@ -1,0 +1,77 @@
+.main-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: $rosewood;
+  height: 500px;
+  &__container {
+    display: flex;
+  }
+
+  &__card {
+    z-index: 2;
+    font-family: 'Montserrat';
+    width: 380px;
+    margin: 50px 0 0 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    z-index: 1;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+  }
+}
+@media (max-width: 1700px) {
+  .main-block {
+    height: 500px;
+
+    &__card {
+      width: 380px;
+      margin: 50px 0 0 100px;
+    }
+
+    &__image {
+      position: absolute;
+      top: -10px;
+      left: 40%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .main-block {
+    &__card {
+      width: 260px;
+    }
+  }
+}
+
+.card {
+  &__logo {
+    margin: 0 0 60px 0;
+  }
+  &__title {
+    margin: 0 0 15px 0;
+  }
+  &__subtitle {
+    margin: 0 0 60px 0;
+  }
+  &__buttons {
+    display: flex;
+  }
+  &__button {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    padding: 10px 20px;
+    background-color: $green;
+    border: 1px solid $green;
+    transition: 0.1s;
+  }
+  &__button:hover {
+    transition: 0.1s;
+    border: 1px solid $light-green;
+    background-color: inherit;
+  }
+}

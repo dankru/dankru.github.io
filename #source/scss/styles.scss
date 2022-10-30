@@ -1,0 +1,32 @@
+@import './nullstyle.scss';
+@import './variables';
+@import './components/all';
+
+// font-family: 'DM Sans', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+body {
+  height: 100%;
+  line-height: 1;
+  background-color: $background;
+  font-family: 'Playfair Display', serif;
+  color: $white;
+  font-size: 22px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+._container {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  opacity: 0.5;
+}

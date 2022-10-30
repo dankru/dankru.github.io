@@ -1,0 +1,46 @@
+.events {
+  width: 100%;
+  background-color: $rosewood;
+
+  &__container {
+    padding: 0 0 50px 0;
+  }
+
+  &__title {
+    margin: 90px 0 0 0;
+    padding: 100px 0 50px 0;
+    text-align: center;
+  }
+
+  &__slider {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    .slick-arrow {
+      &.slick-next {
+      }
+      &.slick-prev {
+      }
+    }
+  }
+
+  &__events {
+    display: flex;
+    margin: 20px -100px 0 0;
+    justify-content: center;
+  }
+
+  &__event {
+    padding: 0 100px 0 0;
+  }
+
+  &__button {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    height: 50px;
+    margin: 50px auto 0;
+    width: 200px;
+    background-color: $green;
+  }
+}

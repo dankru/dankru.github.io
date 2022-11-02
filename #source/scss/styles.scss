@@ -30,3 +30,11 @@ body {
   font-size: 23px;
   opacity: 0.5;
 }
+@media (max-width: '767px') {
+  .title {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+}

@@ -17,6 +17,12 @@
     margin: 0 auto;
     padding: 0 50px;
     position: relative;
+    @media (max-width: '1100px') {
+      max-width: 800px;
+    }
+    @media (max-width: '767px') {
+      max-width: 500px;
+    }
     .slick-arrow {
       &.slick-next {
       }
@@ -25,6 +31,7 @@
     }
     .events__item img {
       max-height: 400px;
+      max-width: 300px;
     }
   }
 

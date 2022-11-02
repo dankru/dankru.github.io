@@ -30,8 +30,16 @@
     padding: 0 40px;
     .films__item img {
       max-height: 400px;
+      max-width: 300px;
+    }
+    @media (max-width: '1100px') {
+      max-width: 750px;
+    }
+    @media (max-width: '767px') {
+      max-width: 400px;
     }
   }
+
   .slick-arrow {
     &.slick-prev {
     }

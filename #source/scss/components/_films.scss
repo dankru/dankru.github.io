@@ -28,6 +28,9 @@
     margin: 0 auto;
     position: relative;
     padding: 0 40px;
+    .films__item img {
+      max-height: 400px;
+    }
   }
   .slick-arrow {
     &.slick-prev {

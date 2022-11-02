@@ -5,7 +5,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
         },
@@ -22,7 +22,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
         },

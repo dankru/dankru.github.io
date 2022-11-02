@@ -6,6 +6,7 @@
   height: 500px;
   &__container {
     display: flex;
+    align-items: flex-start;
   }
 
   &__card {
@@ -80,7 +81,7 @@
     .card__logo {
       display: block;
       margin: 0 0 30px 0;
-      opacity: 0.3;
+      opacity: 0.8;
     }
     .card {
       margin: 50px 0 0 50px;
@@ -89,10 +90,13 @@
 }
 @media (max-width: 950px) {
   .main-block {
+    background-color: inherit;
     &__image {
       position: absolute;
       top: -10px;
-      left: 30%;
+      left: -20px;
+      right: 0;
+      opacity: 0.4;
     }
   }
 }
@@ -107,19 +111,11 @@
     .card__logo {
       display: none;
     }
-    &__image {
-      position: absolute;
-      top: -10px;
-      left: -20px;
-      right: 0;
-      opacity: 0.4;
-    }
   }
 }
 @media (max-width: 600px) {
   .main-block {
     background: url('/cinema/span/img/hall1x500.png') 0 0/100% auto no-repeat;
-
     .img {
       display: none;
     }

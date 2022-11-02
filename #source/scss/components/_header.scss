@@ -102,6 +102,9 @@
 }
 @media (max-width: 767px) {
   .header {
+    .header__container {
+      min-height: 100px;
+    }
     &__logo {
       display: block;
       width: 100%;
@@ -135,7 +138,7 @@
   .header__menu.active {
     .menu__list {
       transition: 0.3s;
-      top: 120px;
+      top: 80px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -157,7 +160,7 @@
   .header__burger {
     display: block;
     position: absolute;
-    top: 65px;
+    top: 45px;
     right: 40px;
   }
 }

@@ -84,12 +84,19 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 865px) {
   .header__menu {
     .menu__list {
       font-size: 20px;
     }
     .menu__item {
+    }
+  }
+}
+@media (max-width: 810px) {
+  .header__menu {
+    .menu__list li {
+      margin: 0 0 0 20px;
     }
   }
 }

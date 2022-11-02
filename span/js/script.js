@@ -5,6 +5,12 @@ $(document).ready(function () {
     slidesToShow: 3,
     responsive: [
       {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
@@ -15,6 +21,12 @@ $(document).ready(function () {
   $('.events__slider').slick({
     slidesToShow: 3,
     responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 767,
         settings: {

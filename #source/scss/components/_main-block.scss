@@ -11,10 +11,14 @@
   &__card {
     z-index: 2;
     font-family: 'Montserrat';
-    width: 380px;
-    margin: 50px 0 0 200px;
+    max-width: 380px;
+    margin: 100px 0 0 200px;
     display: flex;
     flex-direction: column;
+    & .card__logo {
+      display: none;
+      opacity: 0.3;
+    }
   }
   &__image {
     z-index: 1;
@@ -23,39 +27,15 @@
     left: 50%;
   }
 }
-@media (max-width: 1700px) {
-  .main-block {
-    height: 500px;
-
-    &__card {
-      width: 380px;
-      margin: 50px 0 0 100px;
-    }
-
-    &__image {
-      position: absolute;
-      top: -10px;
-      left: 40%;
-    }
-  }
-}
-@media (max-width: 767px) {
-  .main-block {
-    &__card {
-      width: 260px;
-    }
-  }
-}
-
 .card {
   &__logo {
     margin: 0 0 60px 0;
   }
   &__title {
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
   }
   &__subtitle {
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
   }
   &__buttons {
     display: flex;
@@ -73,5 +53,57 @@
     transition: 0.1s;
     border: 1px solid $light-green;
     background-color: inherit;
+  }
+}
+
+@media (max-width: 1700px) {
+  .main-block {
+    height: 500px;
+
+    &__card {
+      width: 380px;
+      margin: 100px 0 0 100px;
+    }
+
+    &__image {
+      position: absolute;
+      top: -10px;
+      left: 40%;
+    }
+    .card__logo {
+      opacity: 1;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .main-block {
+    .card__logo {
+      display: block;
+      margin: 0 0 30px 0;
+      opacity: 0.3;
+    }
+    .card {
+      margin: 50px 0 0 50px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .main-block {
+    background-color: $background;
+    &__card {
+      flex-grow: 1;
+      max-width: 260px;
+      margin: 50px 0 0 100px;
+    }
+    .card__logo {
+      display: none;
+    }
+    &__image {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      opacity: 0.4;
+    }
   }
 }

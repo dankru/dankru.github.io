@@ -54,40 +54,13 @@
       </div>
   </div>
 </header>
- <div class="auth">
-  <div class="auth__container _container">
-    <div class="auth__form">
-      <input class="loginInput input" type="text" id="UserLogin" placeholder="Логин"></input>
-      <input class="passwordInput input" type="password" id="UserPassword" placeholder="Пароль"></input>
-      <div class="auth__links">
-        <a href="./account.html" class="auth__link">
-          <button class="loginBtn button">Войти</button>
-        </a>
-        <a href="#" class="auth__link">
-          <button class="registerBtn button">Зарегистрироваться</button>
-        </a>
-      </div>
+ <div class="account">
+  <div class="account__container _container">
+    <div class="account__info">
+      <div class="account__login">Аккаунт #1: Admin</div>
+      <div class="account__statistics">Зарегистрирован с</div>
     </div>
-    <div class="auth__info">
-      <div class="auth__icon active">
-        <picture><source srcset="img/infoIcon.webp" type="image/webp"><img src="img/infoIcon.png" alt="infoIcon"></picture>
-      </div>
-      <div class="popup-card popup">
-        <div class="popup__overlay">
-          <div class="popup__content">
-            <div class="popup__close-btn">X</div>
-            <div class="title">Заголовок</div>
-            <p class="text">Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="text-wrong">Пароль должен содержать 12 
-        букв, 35 номеров, 44 дефиса, 
-        пять пробелов и 10 слов на 
-        латыни</div>
-      <div class="text-good"></div>
-    </div>
+    <button onclick=logOut() class="account__button button">Выйти</button>
   </div>
 </div>
       <footer class="footer">
@@ -107,6 +80,5 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/app.min.js?_v=20230219205521"></script>
-
   </body>
 </html>

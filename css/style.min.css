@@ -1531,30 +1531,6 @@ body {
     margin: 0 0 50px 0;
   }
 
-  .item .timeTables {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-
-  .item .timeTables .timeTable__block {
-    margin: 0 20px 0 0;
-  }
-
-  .item .timeTables .timeTable__block:hover {
-    border-top: 1px solid #46996C;
-    margin: 0 20px -1px 0;
-  }
-
-  .item .timeTable2d,
-  .item .timeTable3d {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1924,6 +1900,43 @@ body {
 
   .slider-films {
     margin: 450px auto 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 50px 0;
+  }
+
+  .item .timeTables {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .item .timeTables .timeTable__block {
+    margin: 0 20px 0 0;
+  }
+
+  .item .timeTables .timeTable__block:hover {
+    border-top: 1px solid #46996C;
+    margin: 0 20px -1px 0;
+  }
+
+  .item .timeTable2d,
+  .item .timeTable3d {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

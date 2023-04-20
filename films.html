@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Playfair+Display&display=swap&subset=cyrilic-ext&_v=20230219205521"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Playfair+Display&display=swap&subset=cyrilic-ext&_v=20230420230743"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230219205521" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230420230743" />
   <title>Новости</title>
 </head>
 
@@ -23,7 +23,7 @@
       <!-- <span></span> -->
     </div>
     <a href="./index.html" class="header__logo">
-      <picture><source srcset="img/AmogusLogo.webp" type="image/webp"><img src="img/AmogusLogo.png" alt="amogusLogo" width="103px" height="59px" /></picture>
+      <picture><source srcset="img/AmogusLogo-green.webp" type="image/webp"><img src="img/AmogusLogo-green.jpg" alt="amogusLogo" width="103px" height="59px" /></picture>
     </a>
     <nav class="header__menu menu">
       <ul class="menu__list">
@@ -54,7 +54,45 @@
       </div>
   </div>
 </header>
- <div class="films-body">
+
+      <div class="emotionField">
+  <div class="emotionField__container _container">
+    <div class="emotionField__card card">
+      <div class="card__container">
+        <div class="card__title">Добрый день или вечер!</div>
+        <div class="card__text">
+          Наш сайт использует систему распознавания эмоций. Это помогает нам понимать, насколько
+          нашим пользователям нравятся представленные фильмы.
+        </div>
+      </div>
+      <div class="card__icon">
+        <picture><source srcset="img/masks.webp" type="image/webp"><img src="img/masks.png" alt="" /></picture>
+      </div>
+    </div>
+
+    <div class="emotionField__info info">
+      <div class="info__container _container">
+        <div class="info__icon">
+          <picture><source srcset="img/QuestionCircle.webp" type="image/webp"><img src="img/QuestionCircle.png" alt="" /></picture>
+        </div>
+        <div class="info__title">Как это работает?</div>
+      </div>
+      <div class="info__text">
+        Если вы хотите получить статистику о том, сколько раз вы улыбнулись или загрустили за время
+        просмотра фильма, поставьте галочку в поле ниже и предоставьте сайту доступ к вашей
+        веб-камере
+      </div>
+    </div>
+    <div class="emotionField__buttons buttons">
+      <div class="buttons__agree">
+        <input type="checkbox" class="checkbox" id="emotion" value="yes" />
+        <label for="emotion">Я согласен</label>
+      </div>
+      <div class="buttons__disagree">Нет</div>
+    </div>
+  </div>
+</div>
+<div class="films-body">
   <div class="films-body__container _container">
     <div class="films-body__items items">
       <div class="films-body__card card">
@@ -115,10 +153,10 @@
 </footer>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230219205521"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230420230743"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.min.js?_v=20230219205521"></script>
+    <script src="js/app.min.js?_v=20230420230743"></script>
   </body>
 </html>

@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Playfair+Display&display=swap&subset=cyrilic-ext&_v=20230219205521"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&family=Playfair+Display&display=swap&subset=cyrilic-ext&_v=20230420230743"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230219205521" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230420230743" />
   <title>Новости</title>
 </head>
 
@@ -36,7 +36,7 @@
       <!-- <span></span> -->
     </div>
     <a href="./index.html" class="header__logo">
-      <picture><source srcset="img/AmogusLogo.webp" type="image/webp"><img src="img/AmogusLogo.png" alt="amogusLogo" width="103px" height="59px" /></picture>
+      <picture><source srcset="img/AmogusLogo-green.webp" type="image/webp"><img src="img/AmogusLogo-green.jpg" alt="amogusLogo" width="103px" height="59px" /></picture>
     </a>
     <nav class="header__menu menu">
       <ul class="menu__list">
@@ -70,6 +70,20 @@
 
       <div class="content">
   <div class="content__container _container">
+    <div class="content__forms">
+      <div class="form">
+        <input type="text" class="titleInput inputField" placeholder="Заголовок" />
+        <textarea class="textInput inputField" placeholder="Текст статьи"></textarea>
+        <label class="custom-file-upload button">
+          <input type="file" class="input" />
+          Выберите файл
+        </label>
+        <div class="buttons">
+          <div class="addNewsBtn button formButton">Добавить</div>
+          <div class="deleteNewsBtn button formButton">Удалить</div>
+        </div>
+      </div>
+    </div>
     <div class="content__items items">
       <div class="card">
         <div class="card__image">
@@ -156,10 +170,10 @@
 </footer>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230219205521"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js?_v=20230420230743"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.min.js?_v=20230219205521"></script>
+    <script src="js/app.min.js?_v=20230420230743"></script>
   </body>
 </html>
